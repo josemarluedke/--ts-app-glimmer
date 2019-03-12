@@ -1,4 +1,5 @@
 import Component from '@glimmer/component';
+import { Owner } from '@glimmer/di';
 
 interface Args {
   hello: string;
@@ -15,7 +16,7 @@ interface Args {
 export default class MyComponent extends Component {
   public args!: Args;
 
-  public constructor(owner: never, args: Args) {
+  public constructor(owner: Owner, args: Args) {
     super(owner, args);
   }
 
