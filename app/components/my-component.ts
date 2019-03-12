@@ -4,6 +4,11 @@ interface Args {
   hello: string;
 }
 
+// Type definitions coming from:
+
+// node_modules/@glimmer/component/dist/types/src/component.d.ts
+
+
 // The following line does not work
 // export default class MyComponent extends Component<Args> {
 
